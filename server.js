@@ -5,9 +5,11 @@ const server = app.listen(process.env.PORT || port)
 const io = require('socket.io')(server)
 
 //Hello World line taken from the express website
-app.get('/', (req, res) => {
-  res.send('index.html')
-})
+app.get('/', function(req, res) {
+  res.sendFile('index.html' , { root : __dirname});
+});
+
+app.use("/static", express.static('./static/'));
 
 let players = [];
 //The 'connection' is a reserved event name in socket.io
