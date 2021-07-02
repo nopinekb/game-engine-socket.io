@@ -1,6 +1,6 @@
 //Establishing a connection with the server on port 5500y
 //const socket = io('http://localhost:3000');
-const socket = io('https://socket-game2.herokuapp.com:3000');
+const socket = io.connect('https://socket-game2.herokuapp.com', {secure: true});
 
 var canvas = document.getElementById("canvas");
 
