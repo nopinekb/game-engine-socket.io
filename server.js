@@ -6,7 +6,7 @@ const io = require('socket.io')(server)
 
 //Hello World line taken from the express website
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('index.html')
 })
 
 let players = [];
