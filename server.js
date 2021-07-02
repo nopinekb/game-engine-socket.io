@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
-const server = app.listen(port)
+const server = app.listen(process.env.PORT || port)
 const io = require('socket.io')(server)
 
 //Hello World line taken from the express website
