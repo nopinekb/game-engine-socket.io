@@ -13,7 +13,7 @@ var LoopSpeed = 10;
 var PlayerID = Math.floor(Math.random() * 1000000);
 var counterPlayers = 0;
 var sprite = new Image(20, 20);
-sprite.src = 'C:/Users/Никита/Documents/game/sprite.png';
+sprite.src = 'sprite.png';
 
 function PlayerControl() {
 	var LEFT=37, UP=38, RIGHT=39, DOWN=40;
